@@ -28,8 +28,10 @@ int main()
     // 检测关键点和计算描述子
     std::vector<cv::KeyPoint> keypoints1, keypoints2;
     cv::Mat descriptors1, descriptors2;
+    
     orb->detectAndCompute(image1_gray, cv::noArray(), keypoints1, descriptors1);
     orb->detectAndCompute(image2_gray, cv::noArray(), keypoints2, descriptors2);
+
 
     // 创建FLANN匹配器
     //注意：BruteForce_HAMMING匹配类型适用于二进制特征描述子，如ORB（Oriented FAST and Rotated BRIEF）和Brief。

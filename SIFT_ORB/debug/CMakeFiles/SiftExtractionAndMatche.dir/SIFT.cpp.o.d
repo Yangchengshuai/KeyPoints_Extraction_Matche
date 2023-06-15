@@ -1,5 +1,5 @@
 CMakeFiles/SiftExtractionAndMatche.dir/SIFT.cpp.o: \
-  /Users/chengshuai/Documents/work/test/KeyPointsExtractionAndMatche/SIFT.cpp \
+  /Users/chengshuai/Documents/work/test/SIFT_ORB/SIFT.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config_site \

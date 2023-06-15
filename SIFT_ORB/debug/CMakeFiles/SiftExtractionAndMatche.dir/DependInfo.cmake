@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/chengshuai/Documents/work/test/KeyPointsExtractionAndMatche/SIFT.cpp" "CMakeFiles/SiftExtractionAndMatche.dir/SIFT.cpp.o" "gcc" "CMakeFiles/SiftExtractionAndMatche.dir/SIFT.cpp.o.d"
+  "/Users/chengshuai/Documents/work/test/SIFT_ORB/SIFT.cpp" "CMakeFiles/SiftExtractionAndMatche.dir/SIFT.cpp.o" "gcc" "CMakeFiles/SiftExtractionAndMatche.dir/SIFT.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

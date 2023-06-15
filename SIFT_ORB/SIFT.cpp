@@ -26,11 +26,13 @@ int main()
     //计算SIFT特征检测和匹配的时间
     double start = static_cast<double>(cv::getTickCount());
     //提取两幅图像的SIFT特征点并筛选出匹配的特征点
+    // cv::KeyPoint::KeyPoint(Point2f pt, float size, float angle = -1, float response = 0, int octave = 0, int class_id = -1)
+    //pt：关键点的坐标，类型为 cv::Point2f，表示关键点在图像中的位置。size：关键点的尺度大小。angle：关键点的方向角度（可选，默认为-1）。response：关键点的响应值（可选，默认为0）。octave：关键点所在的金字塔组（可选，默认为0）。
     vector<cv::KeyPoint> keypoints1,keypoints2;
     cv::Mat descriptors1,descriptors2;
     cv::Ptr<cv::FeatureDetector> detector=cv::SiftFeatureDetector::create();
     cv::Ptr<cv::DescriptorExtractor> descriptor=cv::SiftDescriptorExtractor::create();
-    cv::Ptr<cv::DescriptorMatcher> matcher=cv::DescriptorMatcher::create("BruteForce");
+    cv::Ptr<cv::DescriptorMatcher> matcher=cv::DescriptorMatcher::create("FlannBased");
     
     //----------------------------------------------------------------------------------------------------//
     //opencv3里提供了两种匹配算法，分别是BruteForce和FlannBased，BruteForce是暴力匹配，FlannBased是基于近似最近邻的匹配。
@@ -49,7 +51,8 @@ int main()
     descriptor->compute(gray_img2,keypoints2,descriptors2);
 
     //匹配
-    vector<cv::DMatch> matches;
+    vector<cv::DMatch> matches;//cv::DMatch::DMatch(int queryIdx, int trainIdx, float distance) 
+    //queryIdx：获取查询图像中特征点的索引。trainIdx：获取训练图像中特征点的索引。 distance：获取特征点之间的距离或相似度。
     matcher->match(descriptors1,descriptors2,matches);
     //筛选匹配点
     double min_dist=10000,max_dist=0;

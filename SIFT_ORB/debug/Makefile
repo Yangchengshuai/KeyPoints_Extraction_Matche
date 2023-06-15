@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.26.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/chengshuai/Documents/work/test/KeyPointsExtractionAndMatche
+CMAKE_SOURCE_DIR = /Users/chengshuai/Documents/work/test/SIFT_ORB
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/chengshuai/Documents/work/test/KeyPointsExtractionAndMatche/debug
+CMAKE_BINARY_DIR = /Users/chengshuai/Documents/work/test/SIFT_ORB/debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chengshuai/Documents/work/test/KeyPointsExtractionAndMatche/debug/CMakeFiles /Users/chengshuai/Documents/work/test/KeyPointsExtractionAndMatche/debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chengshuai/Documents/work/test/SIFT_ORB/debug/CMakeFiles /Users/chengshuai/Documents/work/test/SIFT_ORB/debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chengshuai/Documents/work/test/KeyPointsExtractionAndMatche/debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chengshuai/Documents/work/test/SIFT_ORB/debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
